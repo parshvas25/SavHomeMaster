@@ -1,0 +1,110 @@
+<!--
+All forms of employees will be able to make their account at this page.
+Those that are not in a managerial position will be given different set of
+accsess.
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Creat an Account with Savaria</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="../assets/style.css" type="text/css"/>
+    <style>
+      .error {
+        color: white;
+        padding: 5px;
+        margin: 5px 0 15px 0;
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo col-md-2 col-sm-4 col-xs-2">
+          <a href="../Login/login.html"><img src="../assets/header/logo.png"></img></a>
+        </div>
+        <!--Later individual icon will go here, which we will dynamicall change in javascript-->
+      </div>
+    </header>
+    <br><br><br><br>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <h1>Make a New Account!</h1>
+          <form id = "reg-form">
+            <div class="form-group">
+              <label>First and Last Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Name">
+              <div class="invalid-feedback">
+                First name and Last name must be between 2 and 25 characters and seperated by a space
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Enter a Username</label>
+              <input type="text" class="form-control" id="userName" placeholder="User Name">
+              <div class="invalid-feedback">
+                Username must be between 2 and 10 alpha-characters with NO spacing
+              </div>
+            </div>
+            <div class="form-check mb-4">
+              <input type="checkbox" class="form-check-input" id="managerCheck">
+              <label class="form-check-label">I hold a managerial position at Savaria</label>
+            </div>
+            <!-- <div class="form-group">
+              <label>Savaria or Google Email address</label>
+              <input type="text" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              <div class="invalid-feedback">
+                Enter a valid email
+              </div>
+            </div> -->
+            <div class="form-group">
+              <label>Password</label>
+              <input type="password" class="form-control" id="InputPassword" placeholder="Password">
+              <div class="invalid-feedback">
+                Pasword must be between 2 and 20 characters and must be alpha-numeric
+              </div>
+            </div>
+            <button type="submit" class="btn btn-outline-success" id="submitBtn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script Inclusions -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
+      <!-- Add Firebase products that you want to use -->
+      <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-database.js"></script>
+      <!-- <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-firestore.js"></script> -->
+      <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-storage.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBJveqIrB6z9o4lF2cWMNH1uT9fUGLXVQo",
+        authDomain: "sav-home.firebaseapp.com",
+        databaseURL: "https://sav-home.firebaseio.com",
+        projectId: "sav-home",
+        storageBucket: "sav-home.appspot.com",
+        messagingSenderId: "837512468886",
+        appId: "1:837512468886:web:cb8e05b77a6e5377"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="registration.js"></script>
+  </body>
+</html>

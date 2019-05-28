@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SavHome</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,700,700i" rel="stylesheet">
+    <!--Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="../assets/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../assets/bootstrap-social-gh-pages/bootstrap-social.css" type="text/css"/>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo col-md-2 col-sm-4 col-xs-2">
+          <a href="login.html"><img src="../assets/header/logo.png"></img></a>
+        </div>
+        <!--Later individual icon will go here, which we will dynamicall change in javascript-->
+      </div>
+    </header>
+
+    <div class="center">
+      <div class="login-logo">
+        <a href="login.html"><img src="../assets/login.png"></img></a>
+      </div>
+
+      <h3>Login</h3>
+      <div class="login-form">
+        <input id="txtEmail" type="email" name="Username" placeholder="Email">
+        <br><br>
+        <input id="txtPassword" type="password" name="Password" placeholder="Password">
+        <button id="btnLogin" class="sampletxt">Login</button>
+      </div>
+      <p><a href="#">Forget your password?</a></p>
+      <p>Don't have an account? <a href="../Account-Creation/new-account.html">Make One!</a></p>
+    </div>
+
+    <!-- Script Inclusions -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/6.0.0/firebase-app.js"></script>
+      <!-- Add Firebase products that you want to use -->
+      <script src="https://www.gstatic.com/firebasejs/6.0.0/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/6.0.0/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-storage.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBJveqIrB6z9o4lF2cWMNH1uT9fUGLXVQo",
+        authDomain: "sav-home.firebaseapp.com",
+        databaseURL: "https://sav-home.firebaseio.com",
+        projectId: "sav-home",
+        storageBucket: "sav-home.appspot.com",
+        messagingSenderId: "837512468886",
+        appId: "1:837512468886:web:cb8e05b77a6e5377"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script type="text/javascript" src="auth.js"></script>
+  </body>
+</html>

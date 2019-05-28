@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>View Jobs for Telecab</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"/>
+    <link rel="stylesheet" href="../../assets/style.css" type="text/css"/>
+  </head>
+  <body>
+    <header>
+      <div class="container2">
+        <div class="logo col-md-2 col-sm-4 col-xs-2">
+          <a href="login.html"><img src="../../assets/header/logo.png"></img></a>
+        </div>
+      </div>
+    </header>
+    <br><br><br><br>
+
+    <div class="container">
+      <h2><span class = "Tele-Title">Telecab</span> Currently Active Jobs</h2>
+      <div>
+        <span>Job Number</span>
+        <input type="number" id = "myInput" onkeyup="Filter()" placeholder="Search for Job Number">
+        <a href="../../Choose-View/chooseView.html"><button type="button" class="button">Return Home!</button></a>
+      </div>
+      <table class = "u-full-width" id="filterTable">
+        <thead> <!-- table head -->
+          <tr class="u-full-width"> <!-- table row -->
+            <th class = 'Tele-EL' id = "jobTH">Job Number</th>
+            <th class = 'Tele-EL'>Employee Name</th>
+            <!-- <th>Status</th> -->
+          </tr>
+        </thead>
+        <tbody id = "job-list">
+
+        </tbody>
+      </table>
+    </div>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-database.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBJveqIrB6z9o4lF2cWMNH1uT9fUGLXVQo",
+        authDomain: "sav-home.firebaseapp.com",
+        databaseURL: "https://sav-home.firebaseio.com",
+        projectId: "sav-home",
+        storageBucket: "sav-home.appspot.com",
+        messagingSenderId: "837512468886",
+        appId: "1:837512468886:web:cb8e05b77a6e5377"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="telecab.js"></script>
+    <script>
+    window.onload = readFromDB();
+    </script>
+  </body>
+</html>

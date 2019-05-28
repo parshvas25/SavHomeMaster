@@ -1,0 +1,75 @@
+.center{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+}
+
+.center .login-logo img{
+  /* -webkit-animation: r1 20s linear infinite; */
+  height: 150px;
+}
+
+.center .login-form input[type="email"]{
+  padding:10px;
+  width:200px;
+  border: #ededed 2px solid;
+}
+
+.center .login-form input[type="email"]:focus{
+    border-color: #9AC355;
+    -webkit-transition: border-color .5s;
+    transition: border-color .5s;
+}
+
+.center .login-form input[type ="password"]{
+  padding: 10px;
+  width: 200px;
+  border: #ededed 2px solid;
+}
+
+.center .login-form input[type="password"]:focus{
+    border-color: #9AC355;
+    -webkit-transition: border-color .5s;
+    transition: border-color .5s;
+}
+
+.center .login-form #btnLogin, .center .login-form #pass{
+  display: block;
+  margin: 15px auto;
+  height: 40px;
+  width: 100px;
+  background-color: white;
+  border: #ededed 2px solid;
+  color: #bdbdbd;
+  border-radius: 15px;
+  outline: none;
+}
+
+.center .login-form #gLogin{
+  outline: none;
+}
+
+.center .login-form #btnLogin:hover{
+  border-color: #9AC355;
+  color: #9AC355;
+  -webkit-transition: border-color .5s, color .5s;
+  transition: border-color .5s, color .5s;
+}
+
+.center p a{
+  color: black;
+}
+
+.center p a:hover {
+    text-decoration: none;
+    color: #9AC355;
+    -webkit-transition: color .25s;
+    transition: color .25s;
+}
+
+@keyframes r1 {
+  0%{transform: rotate(-360deg)};
+  10%{transform: rotate(0deg)};
+}

@@ -1,0 +1,124 @@
+@import 'header/header.css';
+@import 'index.css';
+@import 'posting.css';
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700');
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.nav{
+  display:none;
+}
+
+
+#jobTH{
+  padding-left: 10px;
+}
+
+.tdEl {
+  font-size: 17px;
+}
+
+.VEL {
+  font-weight: bold;
+  background-color: #FBAB7E;
+  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  border-radius: 8px;
+}
+
+.VTitle{
+  background-color:#FBAB7E;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.EEL{
+  font-weight: bold;
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  border-radius: 8px;
+}
+
+.ETitle{
+  background-color:#8EC5FC;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.DEL{
+  font-weight: bold;
+  background-color: #FAACA8;
+  background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+  border-radius: 8px;
+}
+
+.DTitle{
+  background-color:#FAACA8;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.Eclip-EL{
+  font-weight: bold;
+  background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+  border-radius: 8px;
+}
+
+.Eclip-Title{
+  background-color:#ff8177;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.Elec-EL{
+  font-weight: bold;
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  border-radius: 8px;
+}
+
+.Elec-Title{
+  background-color:#d4fc79;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.Tele-EL{
+  font-weight: bold;
+  background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
+  border-radius: 8px;
+}
+
+.Tele-Title{
+  background-color:#a7a6cb;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.Multi-EL{
+  font-weight: bold;
+  background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+  border-radius: 8px;
+}
+
+.Multi-Title{
+  background-color:#c79081;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.OEL{
+  font-weight: bold;
+background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);  border-radius: 8px;
+}
+
+.OTitle{
+  background-color:#e6b980;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.card-box:hover{
+  background-color: green;
+}
